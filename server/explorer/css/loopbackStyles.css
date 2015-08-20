@@ -1,0 +1,128 @@
+/* Styles used for loopback explorer customizations */
+.accessTokenDisplay {
+  color: white;
+  margin-right: 10px;
+}
+.accessTokenDisplay.set {
+  border-bottom: 1px dotted #333; position: relative; cursor: pointer;
+}
+.accessTokenDisplay.set:hover:after {
+  content: attr(data-tooltip);
+  position: absolute;
+  white-space: nowrap;
+  font-size: 12px;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 3px 7px;
+  color: #FFF;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  right: 0;
+  bottom: -30px;
+}
+
+/* JSON syntax highlighting */
+.json, .json .attribute {
+  color: black;
+}
+
+.json .value .string {
+  color: #800;
+}
+
+.json .value .number, .json .value .literal {
+  color: #080;
+}
+
+/* Improve spacing when the browser window is small */
+#message-bar, #swagger-ui-container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#api_selector {
+  padding: 0px 20px;
+}
+
+
+
+/* nanoPay customizations */
+body #header {
+  background-color: rgba(255,255,255,.95);
+  box-shadow: 0 5px 0 0 rgba(0,0,0,.5);
+}
+body #welcome-blurb {
+  font-size: 14px;
+  line-height: 16px;
+  color: #999999;
+  margin-top: 20px;
+}
+
+body #welcome-blurb code {
+  color:#999999;
+  font-weight:bold;
+}
+
+body #welcome-blurb h3 {
+  font-weight:bold;
+  font-size:24px;
+}
+
+body #header a#logo {
+  background: transparent url(../images/logo.svg) no-repeat left center;
+  display:inline-block;
+  width: 200px;
+  vertical-align: top;
+  background-size: 60%;
+}
+
+body #header form#api_selector {
+  display:inline-block;
+  vertical-align:top;
+}
+
+body .content ul.fieldinfo {
+  list-style:disc;
+  list-style-position: inside;
+  margin-bottom:20px;
+  background-color: #fff;
+  float: left;
+  margin-right:20px;
+  padding: 10px;
+  line-height: 20px;
+  color:#999;
+}
+
+body .content i {
+  font-style:italic;
+}
+
+body .content h4 {
+  clear:both;
+}
+
+body .content code {
+  font-family:"Lucida Console", Monaco, monospace;
+  display:block;
+  margin-top:10px;
+}
+
+body .accessTokenDisplay.set {
+  color:#000;
+}
+
+body ul#resources li.resource div.heading ul.options {
+  margin-right:0;
+}
+
+body ul#resources li.resource div.heading ul.options li {
+  padding-right:0;
+}
+
+body ul#resources li.resource div.heading ul.options li:first-child {
+  border:0;
+}
+
+body ul#resources .heading ul.options li:not(:first-child) {
+  display:none;
+}

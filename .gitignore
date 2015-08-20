@@ -1,0 +1,6 @@
+branch
+coverage/
+node_modules/
+node_modules
+npm-debug.log
+.DS_Store

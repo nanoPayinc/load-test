@@ -1,0 +1,11 @@
+{
+  "restApiRoot": "/api",
+  "port": 3002,
+  "socketsPort": 10843,
+  "host": "localhost",
+  "portalUrl": "http://localhost:9000",
+  "remoting": {
+    "json": {"limit": "50mb"},
+    "urlencoded": {"limit": "50mb", "extended": true}
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "_meta": {
+    "sources": [
+      "../modules/testing/models"
+    ]
+  },
+  "load": {
+    "dataSource": null,
+    "public": true
+  }
+}

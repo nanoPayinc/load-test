@@ -1,0 +1,12 @@
+{
+    "execMap": {
+        "js": "iojs --es_staging"
+    },
+    "ext": "js jsx",
+    "ignore": [
+        ".hg",
+        "node_modules",
+        ".idea"
+    ],
+    "verbose": true
+}
