@@ -1,17 +1,18 @@
 # Pre-requerements
 
-Io.js: [https://iojs.org/en/index.html]
-ApacheBenchmark: [http://httpd.apache.org/docs/2.2/programs/ab.html]
+Io.js: [https://iojs.org/en/index.html](download)
+
+ApacheBenchmark: [http://httpd.apache.org/docs/2.2/programs/ab.html](info)
 
 # Start load server
 
 In the folder where you pulled git repository you should run:
 
->> iojs --es_staging .
+> iojs --es_staging .
 
 # You can do manuall calls to Mintchip using Expolorer:
 
-[http://localhost:3002/explorer/#!/loads/]
+[http://localhost:3002/explorer/#!/loads/](Explorer)
 
 Where
 
@@ -23,6 +24,6 @@ Where
 
 For AB (Apache Benchmark I was using following configuration)
 
->> ab -t 10000000000 -s 600 -n 1000 -c 1 http://127.0.0.1:3002/api/loads/testOneWay
+> ab -t 10000000000 -s 600 -n 1000 -c 1 http://127.0.0.1:3002/api/loads/testOneWay
 
 Please note that Node.JS should running when you execute tests.
