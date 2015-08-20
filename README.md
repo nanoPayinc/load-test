@@ -4,6 +4,12 @@ Io.js: [https://iojs.org/en/index.html](download)
 
 ApacheBenchmark: [http://httpd.apache.org/docs/2.2/programs/ab.html](info)
 
+# Update configuration if needed
+
+If needed you can change IP address or accounts in javascript file:
+
+/modules/testing/models/load.js
+
 # Start load server
 
 In the folder where you pulled git repository you should run:
