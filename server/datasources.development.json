@@ -1,2 +1,86 @@
 {
+  "hsmserver": {
+    "name": "hsmserver",
+    "connector": "rest",
+    "debug": true,
+    "json": true,
+    "operations": [
+      {
+        "template": {
+          "method": "POST",
+          "url": "http://hsmapi.minthorizon.com/hsmservercommand/mintchip/createvtm",
+          "headers": {
+            "accepts": "application/json",
+            "content-type": "application/json"
+          },
+          "body": "{data}"
+        },
+        "functions": {
+          "createVtm": ["data"]
+        }
+      },
+      {
+        "template": {
+          "method": "POST",
+          "url": "http://hsmapi.minthorizon.com/hsmservercommand/mintchip/acceptvtm",
+          "headers": {
+            "accepts": "application/json",
+            "content-type": "application/json"
+          },
+          "body": "{data}"
+        },
+        "functions": {
+          "acceptVtm": ["data"]
+        }
+      },
+      {
+        "template": {
+          "method": "GET",
+          "url": "http://hsmapi.minthorizon.com/hsmservercommand/mintchip/{id}/info",
+          "headers": {
+            "content-type": "application/json"
+          }
+        },
+        "functions": {
+          "info": ["id"]
+        }
+      },
+      {
+        "template": {
+          "method": "GET",
+          "url": "http://hsmapi.minthorizon.com/hsmservercommand/mintchip/{id}/activate",
+          "headers": {
+            "content-type": "application/json"
+          }
+        },
+        "functions": {
+          "activate": ["id"]
+        }
+      },
+      {
+        "template": {
+          "method": "GET",
+          "url": "http://hsmapi.minthorizon.com/hsmservercommand/mintchip/log/{id}/2/{startIndex}/{endIndex}",
+          "headers": {
+            "content-type": "application/json"
+          }
+        },
+        "functions": {
+          "log": ["id", "startIndex", "endIndex"]
+        }
+      },
+      {
+        "template": {
+          "method": "GET",
+          "url": "http://hsmapi.minthorizon.com/hsmservercommand/mintchip/{id}/lastdebit",
+          "headers": {
+            "content-type": "application/json"
+          }
+        },
+        "functions": {
+          "lastDebit": ["id"]
+        }
+      }
+    ]
+  }
 }
