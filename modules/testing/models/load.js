@@ -1,6 +1,6 @@
 'use strict'
 
-var app     = require('../../../server/app')
+var app     = require('../../../server/app');
 var SAS = [
   "4310000000000130",
   "4310000000000148",
@@ -1034,8 +1034,10 @@ module.exports = function(Load) {
         }, function(err, load) {
           console.log("LOAD VTM", load);
           app.dataSources.hsmserver.info(Load.payeeId, function(err, info) {
-            console.log("PAYEE INFO", info)
-            cb(false, 'transaction complete');  
+            console.log("PAYEE INFO", info);
+            setTimeout(function() {
+              cb(false, 'transaction complete');  
+            }, 1000);
           });
         })
         
